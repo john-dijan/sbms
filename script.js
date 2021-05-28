@@ -1,12 +1,19 @@
-function funksiya(){
-    document.getElementById('asd').style.backgroundColor = '#3D3D9A';
-    document.getElementById('text').style.color = '#fff';
+function yop(){
+    document.getElementsByClassName('background')[0].style.display='none';
 }
 
-function show(){
-    document.getElementById('numbers').style.display = 'block';
+function och(){
+    document.getElementsByClassName('background')[0].style.display='grid';
 }
 
-function cancel(){
-    document.getElementById('numbers').style.display = 'none';
+function bre(){
+    let x=document.getElementsByClassName('nuw');
+    let len=x.length;
+    let bel=document.getElementsByClassName('kw').length;
+    for (let i=0; i < len; i++){
+        document.getElementsByClassName('nuw')[i].style.background='#3D3D9A';
+    }
+    for (let p=0; p < bel; p++){
+        document.getElementsByClassName('kw')[p].style.color='white';
+    }
 }

@@ -3,25 +3,522 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBMS | Вход в систему</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" href="favicon.ico">
+    <title>SBMS | Комбинированная форма</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
     <div class="header">
-        <h2>СИСТЕМА УПРАВЛЕНИЯ АБОНЕНТСКОЙ БАЗОЙ</h2>
+        <h1>СИСТЕМА УПРАВЛЕНИЯ АБОНЕНТСКОЙ БАЗОЙ</h1>
+        <div class="user">
+            <p>n.mamadaliev</p>
+            <p>04.05.2021 12:05 MSK+7</p>
+            <button class="settings"><img src="img/user-menu-settings.png" alt="">
+                <div class="hot">
+                    <div class="klavish">Горячие клавиши</div>
+                    <div class="klavish">Смена паролья</div>
+                </div>
+            </button>
+            <button class="exit"><img src="img/user-menu-exit.png" alt=""></button>
+        </div>
     </div>
-    <div class="login-system">
-        <h4>Вход в систему</h4>
-    </div>
+    
+    <div class="sbms">
+        <div class="left-menu">
+            <div class="client">Клиенты</div>
+            <div class="asd">Комбинированная форма</div>
+            <div class="asd">Поиск / выбор клиента</div>
+            <div class="asd">Карточка клиента</div>
+            <div class="asd">Фин. карточка клиента</div>
+            <div class="asd">Платежные документы</div>
+            <div class="asd">Объединения</div>
+            <div class="asd">Групповые операции</div>
+            <div class="client">Абоненты</div>
+            <div class="asd">Поиск / выбор <br> абонента</div>
+            <div class="asd">Карточка абонента</div>
+            <div class="asd">БФ по абоненту</div>
+            <div class="asd">Услуги</div>
+            <div class="asd">Индивидуальные <br> параметры услуг</div>
+            <div class="asd">Персональные счета</div>
+            <div class="asd">Информация по <br> абоненту</div>
+            <div class="asd">Начисления</div>
+            <div class="asd">SIM-карты</div>
+            <div class="asd">Скидки</div>
+            <div class="asd">Доп. информация</div>
+            <div class="asd">Абоненский профиль</div>
+            <div class="asd">Сетевые <br> идентификаторы</div>
+            <div class="asd">Оповешения</div>
+            <div class="asd">Тарифные предложения</div>
+            <div class="asd">История изменения и <br> перехода номера</div>
+            <div class="client">Регистрация клиентов</div>
+            <div class="asd">Регистрация нового <br> клиента</div>
+            <div class="asd">Добавление абонента на <br>л/с</div>
+            <div class="asd">Создание лицевого счета</div>
+            <div class="asd">Счета-оплаты</div>
+            <div class="asd">Отчеты по подключениям</div>
+            <div class="client" style="background-image: none;">Групповые операции</div>
+            <div class="client" style="background-image: none;">Формы для оплаты</div>
+            <div class="client">Отчеты Узтелеком</div>
+            <div class="asd">Ф. Группа по работе с <br> дебиторской и  <br>кредиторской <br> задолженностью B2C</div>
+            <div class="asd">Ф. Группа по работе с <br> дебиторской и  <br>кредиторской <br> задолженностью B2B</div>
+            <div class="asd">ОП. Офис продаж и <br> обслуживания B2C</div>
+            <div class="asd">ОП. Офис продаж и <br> обслуживания B2B</div>
+            <div class="client">Обращения клиентов <br> (CRM)</div>
+            <div class="asd">Регистрация обращения</div>
+            <div class="asd">Список обращений</div>
+            <div class="asd">Список обращений <br>текущего клиента</div>
+            <div class="asd">Мои документы</div>
+            <div class="asd">Очереди обработки</div>
+            <div class="asd">Регистрация обращений <br>для клиентов и абонентов<br> из файла</div>
+            <div class="asd">Отчеты</div>
+            <div class="asd">Заметки</div>
+            <div class="asd">Массовое создание <br>заметок</div>
+            <div class="asd">Контактные лица</div>
+            <div class="client" style="background-image: none;">Заказанные отчеты</div>
+        </div>
+        <div class="center">
+            <div class="com-form">Комбинированная форма</div>
+            <div class="login">
+                <select>
+                    <option value="MSISDN/Логин">MSISDN/Логин</option>
+                    <option value="Номер счета">Номер счета</option>
+                    <option value="Номер договора">Номер договора</option>
+                    <option value="IMSI">IMSI</option>
+                    <option value="ICC">ICC</option>
+                    <option value="ИНН">ИНН</option>
+                    <option value="Имя клиента">Имя клиента</option>
+                    <option value="Серия и номер документа">Серия и номер документа</option>
+                </select>
+                <input type="text">
+                <div class="search">
+                    <!-- <div class="lupa"><i class="fa fa-search"></i></div>
+                    <div class="podrob"><i class="fa fa-caret-down"></i></div> -->
+                    <div class="press clear">Очистить</div>
+                    <div class="press reload">Обновить</div>
+                </div>
+            </div>
 
-    <div class="login">
-        <form action="login.html">
-            <label for="user">Пользователь :</label>
-            <input type="text" id="user" name="user" required>
-            <label for="passid">Пароль :</label>
-            <input type="password" id="passid" name="password" required>
-            <input type="submit" value="Войти">
-        </form>
+            <div class="data">
+                <div class="left-data">
+                    <div class="dannie">
+                        <b>Данные клиента</b>
+                        <div class="link">
+                            <a href="#">Карточка клиента</a>
+                            <b>|</b>
+                            <a href="#">Платежи</a>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <b>Имя клиента:</b>
+                        </div>
+                        <div class="client-right">
+                            <b>MIRALIMOV MIRAFZAL MIRAKILOVICH</b>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Адрес регистрации:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Тошкент шаҳри, Учтепа тумани, ГАНИЕВ 2-пр , уй. 7</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Юридический тип:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Физическое лицо</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Тип:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>B2C</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Пол:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Муж.</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Дата рождения:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>10.10.1987</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Документ:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Паспорт</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Серия документа:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>AA</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Номер документа:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>0285242</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Выдан:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>TOSHKENT SHAHAR UCHTEPA TUMANI IIB</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Дата выдачи:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>2012-10-06T00:00:00</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data" style="border-bottom: 0">
+                        <div class="client-left">
+                            <p>Код подрозделения:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>000</p>
+                        </div>
+                    </div>
+                    <div class="balance">
+                        <b>Баланс:</b>
+                    </div>
+                    
+                    <div class="client-data">
+                        <div class="client-left">
+                            <b>Сумма, UZS:</b>
+                        </div>
+                        <div class="client-right">
+                            <b style="color: red;">-0.27</b>
+                        </div>
+                    </div>
+
+                    
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Порог отключения, UZS:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-data">
+                    <div class="dannie">
+                        <b>Абонент</b>
+                        <div class="link">
+                            <a href="#" onclick="och()">Абоненты</a>
+                            <b>[4]</b>
+                        </div>
+                    </div>
+
+                    
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <b>MSISDN/Логин:</b>
+                        </div>
+                        <div class="client-right">
+                            <b>991234567</b>
+                        </div>
+                    </div>
+
+                    <div class="balance">
+                        <b>Продукты</b>
+                        <div class="link">
+                            <a href="#">Звонки</a>
+                            <b>|</b>
+                            <a href="#">Услуги</a>
+                            <b>|</b>
+                            <a href="#">Пакеты</a>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Тарифный план:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>OnLime</p>
+                        </div>
+                    </div>
+
+                    <div class="balance">
+                        <div class="bln">
+                            <b>LC-статус</b>
+                            <div class="status"></div>
+                            <p>rt_active</p>
+                        </div>
+                        <div class="link">
+                            <a href="#">Карточка абонента</a>
+                        </div>
+                    </div>
+
+                    <div class="balance">
+                        <b>Балансы</b>
+                        <div class="link">
+                            <a href="#">Платежи</a>
+                            <b>|</b>
+                            <a href="#">Скидки</a>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <b>Основной баланс:</b>
+                        </div>
+                        <div class="client-right">
+                            <b style="color: #008000;">39 284.99</b>
+                        </div>
+                    </div>
+
+                    <div class="balance">
+                        <b>Подробная информация</b>
+                        <div class="link"><a href="#">SIM-карты</a></div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Класс номера:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Обычный</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Тип номера:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>GSM MOBILE</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Коммутатор:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>GSM ZTE</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>ICC:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>8999899003556608175</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>IMSI:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>434080105660817</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Дата активации:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>30.11.2020 09:39:40</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Дата последнего платежа:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>02.05.2021 03:47:45</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left lleft">
+                            <p>Сумма последнего платежа:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>25 000.00</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data comment">
+                        <div class="client-left lleft">
+                            <p>Комментарий абонента:</p>
+                        </div>
+                        <div class="client-right">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom-data">
+                    <div class="dannie">
+                        <b>Основной счет: <span style="font-weight: normal">662891</span></b>
+                    </div>
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Профиль:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>1 MOBILE. Физическое лицо</p>
+                        </div>
+                    </div>
+
+                    <div class="client-data">
+                        <div class="client-left">
+                            <p>Биллинговая группа:</p>
+                        </div>
+                        <div class="client-right">
+                            <p>Физические клиенты</p>
+                        </div>
+                    </div>
+                    
+                    <div class="client-data comment">
+                        <div class="client-left">
+                            <p>Комментарий клиента:</p>
+                        </div>
+                        <div class="client-right">
+                            <p style="margin-top: 15px;">MIRALIMOV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div class="nomerlar">
+            <div class="abonenty">
+                <b>Абоненты</b>
+                <div class="close" title="Закрыть" onclick="yop()">X</div>
+            </div>
+            <b class="flex">Клиент: <span style="font-weight: normal;">662891 (  MIRALIMOV MIRAFZAL MIRAKILOVICH: 0.2734   Дебет) </span></b>
+            
+            <div class="spiska">
+                <div class="statuslar">
+                    <div class="img">
+                        <img src="img/refresh.png" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img src="img/trash.png" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img src="img/status_green.png" alt="">
+                        <span>Действующие</span>
+                    </div>
+
+                    <div class="img">
+                        <img src="img/status_red.png" alt="">
+                        <span>Закрытые</span>
+                    </div>
+
+                    <div class="img">
+                        <img src="img/features_folder.png" alt="">
+                    </div>
+
+                    <p>[4]</p>
+                </div>
+                <div class="nomidegi-nomerlar">
+                    <div class="numbers">
+                        <div class="tepa num-header"></div>
+                        <div class="tepa standard"><b>Стандарт</b></div>
+                        <div class="tepa nomer"><b>Номер</b></div>
+                        <div class="tepa numeraciya"><b>Нумерация</b></div>
+                        <div class="tepa stat"><b>Статус</b></div>
+                        <div class="tepa zone"><b>Зона</b></div>
+                        <div class="tepa tplan"><b>Тарифный план</b></div>
+                    </div>
+
+                    <div class="numbers nuw" ondblclick="yop()" onclick="bre()">
+                        <div class="tepa num-header" style="background: #00f000;"></div>
+                        <div class="tepa standard"><span class="kw">GSM</span></div>
+                        <div class="tepa nomer"><span class="kw">991234567</span></div>
+                        <div class="tepa numeraciya"><span class="kw">Федеральная</span></div>
+                        <div class="tepa stat"><span class="kw">Действующий</span></div>
+                        <div class="tepa zone"><span class="kw">Зона сервера БД</span></div>
+                        <div class="tepa tplan"><span class="kw">OnLime</span></div>
+                    </div>
+
+                    <div class="numbers nuw" ondblclick="yop()" onclick="bre()">
+                        <div class="tepa num-header" style="background: #ff80ff;"></div>
+                        <div class="tepa standard"><span class="kw">GSM</span></div>
+                        <div class="tepa nomer"><span class="kw">997010110</span></div>
+                        <div class="tepa numeraciya"><span class="kw">Федеральная</span></div>
+                        <div class="tepa stat"><span class="kw">Действующий</span></div>
+                        <div class="tepa zone"><span class="kw">Зона сервера БД</span></div>
+                        <div class="tepa tplan"><span class="kw">Просто 10</span></div>
+                    </div>
+
+                    <div class="numbers nuw" ondblclick="yop()" onclick="bre()">
+                        <div class="tepa num-header" style="background: #8080ff;"></div>
+                        <div class="tepa standard"><span class="kw">GSM</span></div>
+                        <div class="tepa nomer"><span class="kw">997011010</span></div>
+                        <div class="tepa numeraciya"><span class="kw">Федеральная</span></div>
+                        <div class="tepa stat"><span class="kw">Действующий</span></div>
+                        <div class="tepa zone"><span class="kw">Зона сервера БД</span></div>
+                        <div class="tepa tplan"><span class="kw">Units 4000</span></div>
+                    </div>
+
+                    <div class="numbers nuw" ondblclick="yop()" onclick="bre()">
+                        <div class="tepa num-header" style="background: #ff80ff;"></div>
+                        <div class="tepa standard"><span class="kw">GSM</span></div>
+                        <div class="tepa nomer"><span class="kw">999100080</span></div>
+                        <div class="tepa numeraciya"><span class="kw">Федеральная</span></div>
+                        <div class="tepa stat"><span class="kw">Действующий</span></div>
+                        <div class="tepa zone"><span class="kw">Зона сервера БД</span></div>
+                        <div class="tepa tplan"><span class="kw">Просто 10</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="key">
+                <div class="press clear" onclick="yop()">Выбрать</div>
+                <div class="press reload" onclick="yop()">Отменить</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
