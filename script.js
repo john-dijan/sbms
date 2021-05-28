@@ -17,3 +17,6 @@ function bre(){
         document.getElementsByClassName('kw')[p].style.color='white';
     }
 }
+
+let d=new Date();
+document.getElementById('date').innerHTML=d.getHours()+':'+d.getMinutes();
